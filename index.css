@@ -1,0 +1,146 @@
+body {
+  background-color: #2c3e50;
+}
+
+.btn {
+  cursor: pointer;
+}
+body {
+  color: #34495e;
+}
+.js-clock {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  color: pink;
+  margin-bottom: 30px;
+  font-family: "Permanent Marker", cursive;
+}
+.jswrap {
+  display: flex;
+  justify-content: center;
+}
+.jswrap .name {
+  margin-top: 70px;
+  font-family: "Special Elite", cursive;
+}
+.js-form {
+  position: absolute;
+  top: 450px;
+  font-size: 20px;
+}
+.js-form input {
+  outline: none;
+  padding: 10px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  margin-top: 35px;
+  border-color: rgb(19, 191, 148);
+  font-family: "Special Elite", cursive;
+  font-size: 20px;
+}
+.tdwrap {
+  display: flex;
+  justify-content: center;
+}
+.tdwrap .wtd {
+  margin-top: 70px;
+  font-family: "Special Elite", cursive;
+}
+.js-toDoForm input {
+  outline: none;
+  padding: 10px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  margin-top: 10px;
+  border-color: rgb(19, 191, 148);
+  font-family: "Special Elite", cursive;
+  font-size: 20px;
+}
+
+.hwrap {
+  display: flex;
+  justify-content: center;
+}
+.name {
+  position: absolute;
+  top: 380px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+.wtd {
+  position: absolute;
+  top: 500px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+.js-greetings {
+  color: rgb(15, 224, 217);
+  position: absolute;
+  top: 400px;
+  font-size: 80px;
+  margin-top: 10px;
+  font-family: "Charm", cursive;
+}
+.clicked {
+  color: #7f8c8d;
+}
+.js-weather {
+  color: red;
+  top: 40px;
+  position: absolute;
+  font-size: 30px;
+  right: 20px;
+  font-family: "Charm", cursive;
+}
+.form,
+.greetings {
+  display: none;
+}
+.tdl {
+  display: flex;
+  justify-content: center;
+}
+
+.tdl .js-toDoList {
+  font-family: "Special Elite", cursive;
+  font-size: 40px;
+  color: rgb(15, 224, 217);
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.js-greetings,
+.js-toDoList {
+  animation: 0.5s bodyPopIn ease-in-out;
+}
+@keyframes bodyPopIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
